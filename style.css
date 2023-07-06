@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+h2{
+    margin: 30px;
+}
+.periodic-table{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    text-align: center;
+    padding: 5%;
+    background-color: rgb(54, 54, 54);
+}
+
+.periodic-table >div{
+    margin: 2px;
+    padding: 0 8px;
+}
+
+/* // ---------------- space between element ------------ */
+.space1{
+    grid-column-start: 2;
+    grid-column-end: 18;
+}
+
+.space2{
+    grid-column-start: 3;
+    grid-column-end: 13;
+}
+
+/* ------------ f- block ------------- */
+
+.f{
+    grid-column-start: 3;
+    grid-column-end: 17;
+
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+}
+
+.f > div{
+    margin: 2px;
+    padding: 0 8px;
+    background-color: green;
+}
+
+/* ---------------- s block------------- */
+
+.s{
+    background-color: tomato;
+}
+
+
+/* ---------------- p block------------- */
+.p{
+    background-color: rgb(116, 116, 24);
+}
+
+
+/* ---------------- d block------------- */
+.d{
+    background-color: blue;
+}
